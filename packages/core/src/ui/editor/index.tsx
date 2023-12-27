@@ -215,7 +215,7 @@ export default function Editor({
       >
         {editor && <EditorBubbleMenu editor={editor} />}
         {editor?.isActive("image") && <ImageResizer editor={editor} />}
-        <EditorContent editor={editor} />
+        <EditorContent className="novel" editor={editor} />
       </div>
     </NovelContext.Provider>
   );
